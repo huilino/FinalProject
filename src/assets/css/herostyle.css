@@ -1,0 +1,72 @@
+.hero{
+    width:100%;
+    height:70vh;
+    background: url('../../assets/images/herobg.jpg') no-repeat center center/cover;
+    opacity:0.9;
+}
+
+.hero .container{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    padding-left: 200px;
+    
+
+}
+
+.hero .content{
+    border-left: 10px solid rgb(128, 16, 16);
+    padding: 0px;
+    font-size:60px;
+    margin-left:0px;
+    color:rgb(19, 6, 6);
+    padding-top: 30px;
+}
+
+.hero .btn{
+    padding:10px;
+    margin-left: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+h1{
+    font-size:90px;
+    font-weight: bold;
+    color:rgb(12, 1, 1);
+}
+
+h3 {
+    font-size:50px;
+}
+
+p{
+    font-weight: bolder;
+}
+
+.quote{
+    
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    text-align: center;
+    margin:0px;
+}
+
+.quote-text {
+    font-size: 40px;  
+    
+}
+
+.quote-text>svg {
+    color:red;
+    margin-right:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+    font-size: 30px; 
+    
+}
+
+.quote-author{
+    font-size: 20px;
+}

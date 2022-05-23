@@ -1,0 +1,56 @@
+.navbar{
+    box-shadow: 0px 2px 5px grey;
+    height : 100px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.navbar-brand {
+    display: flex;
+    font-size: 40px;
+    padding-top:10px;
+    font-weight: bolder;
+}
+
+.myimg{
+    margin-left:-20px;
+    margin-top: -20px;
+    height:auto;
+    
+}
+
+span{
+    color:red;
+    text-decoration: solid;
+    
+}
+
+.navbar-brand>img {
+    padding: 2px;
+    
+}
+
+.nav-link{
+ 
+    font-size:25px;
+    justify-content: end;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position:relative;
+    
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+.active{
+    color:red !important;
+    font-weight: bolder;
+}
+
+
+
+
+
