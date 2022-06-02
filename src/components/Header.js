@@ -17,16 +17,14 @@ export default function Header() {
               width="100"
               height="80"
               className="d-inline-block align-top myimg"
-            /><p>F</p><span>oo</span><p>d Paradise</p>
+            /><p>F</p><span className="span">oo</span><p>d Paradise</p>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="justify-content-end flex-grow-1">
-            <Nav.Link className="active" as = { NavLink } to ="/">Home</Nav.Link>
-            <Nav.Link className="active" as = { NavLink } to ="/searched/:search">Recipe</Nav.Link>
-            {/* <Nav.Link className="active" as = { NavLink } to ="/suggestion/:id">Suggestion</Nav.Link> */}
-            <Nav.Link className="active" as = { NavLink } to ="/review/">Review</Nav.Link>
-            
+            <Nav.Link  as = { NavLink } to ="/">Home</Nav.Link>
+            <Nav.Link  as = { NavLink } to ="/searched/:search">Recipe</Nav.Link>
+            <Nav.Link  as = { NavLink } to ="/review/">Review</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

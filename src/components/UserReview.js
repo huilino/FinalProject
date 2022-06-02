@@ -1,57 +1,49 @@
 import React,{useState,useEffect} from 'react';
-import {Table, Button} from 'react-bootstrap';
+import {Table, Button,Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { deleteUserInput, getUserInput, updateUserInput, getSpecificUserInput } from '../userinputservices/UserInputServices';
+import '../assets/css/userreview.css';
+import { deleteUserInput, getUserInput} from '../API/UserInputServices';
 
 export default function UserReview() {
 
+  const current = new Date();
+  const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`
   const [userInputs, setUserInputs] = useState([]);
 
   const refreshUserInput = async() => {
     const newUserInput = await getUserInput();
     setUserInputs(newUserInput.reverse());
-    console.log("reviewsummary",userInputs);
-   
+    console.log("User-review: refreshUserInput", newUserInput)
   }
   
-
   useEffect(() => {
       refreshUserInput();
   }, [])
 
   const handleDelete = async (userInput) => {
+    
     const userInputId = userInput.target.value;
+    if(window.confirm(`Are you sure you want to delete?`)){
     console.log("userreview handle delete", userInput.target.value)
     await deleteUserInput(userInputId);  
     refreshUserInput();
+    }
   }
 
-  // const handleView = async (userInput) => {
-  //   const userInputId = userInput.target.value;
-  //   console.log("userreview handle view", userInput.target.value)
-  //   await getSpecificUserInput(userInputId);  
-  //   refreshUserInput();
-  // }
-
-  // const handleEdit = async (userInput) => {
-  //   const userInputId = userInput.target.value;
-  //   console.log("userreview handle edit", userInput.target.value)
-  //   await updateUserInput(userInputId);  
-  //   refreshUserInput();
-  // }
-
   return (
-      <div className="summary">
-        <Link to ="/addreview" >
-          <Button variant="dark">Add Review</Button>
-        </Link>
-          <h2 className="summary-title">User Review</h2>
-          <Table striped bordered hover >
+    <div id="review-list">
+      <Container>
+        <div className="addreview-btn">
+          <Link to ="/addreview" >
+            <Button className="add-btn" variant="dark">Add Review</Button>
+          </Link>
+        </div>
+          <Table className="review-summary">
             <thead>
                 <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Recipe</th>
+                <th>Date Created</th>
+                <th style={{width:"200px"}}>Name</th>
+                <th style={{width:"200px"}}>Recipe</th>
                 <th>Suggestion</th>
                 <th>Action</th>
                 </tr>
@@ -59,25 +51,26 @@ export default function UserReview() {
             
         {userInputs.map((userInput, index) => (
             <tbody>
-                <tr key={index}>
-                  <td>{userInput._id}</td>
-                  <td>{userInput.name}</td>
+                <tr key={userInput._id}>
+                  <td style={{width:"300px"}} >{date}</td>
+                  <td style={{width:"300px"}}>{userInput.name}</td>
                   <td>{userInput.recipe}</td>
-                  <td>{userInput.suggestion}</td> 
-                  <td className="flex justify-center items-center space-x-4 mt-3">
+                  <td style={{width:"800px"}}>{userInput.suggestion.length < 30 ? `${userInput.suggestion}` : 
+                    `${userInput.suggestion.substring(0,40)}...`}</td> 
+                  <td style={{width:"600px"}} className="flex justify-center items-center space-x-4 mt-3">
                 <Link to={`/user/${userInput._id}`}>
-                  <Button className="px-6 py-2" value={userInput._id} variant="light">View</Button>
+                  <Button className="px-6 py-2 view-btn" value={userInput._id} variant="light">View</Button>
                 </Link>
                 <Link to={`/editreview/${userInput._id}`}>
-                  <Button className="px-6 py-2" value={userInput._id} variant="info">Edit</Button>
+                  <Button className="px-6 py-2 edit-btn" value={userInput._id} variant="info">Edit</Button>
                 </Link> 
-                  <Button onClick={handleDelete} value={userInput._id} className="px-6 py-2" variant="warning">Delete</Button>
+                  <Button onClick={handleDelete} value={userInput._id} className="px-6 py-2 delete-btn" variant="warning">Delete</Button>
                 </td> 
                 </tr>
-                
               </tbody>
             ))}
         </Table>
+      </Container>
     </div>
   )
 }

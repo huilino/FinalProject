@@ -1,0 +1,17 @@
+#recipe-carousel{
+    z-index:-1;
+}
+
+.slide-label{
+    color:black;
+    font-weight:bold;
+    font-size: 50px;
+}
+
+.slide-para{
+    font-size:40px;
+    font-style: italic;
+    color:rgb(153, 24, 24);
+    font-weight:bolder;
+    
+}

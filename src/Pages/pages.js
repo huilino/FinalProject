@@ -18,7 +18,7 @@ export default function Pages() {
         <Route path = "/editreview/:id" element={<EditReview/>}/>
         <Route path = "/addreview" element={<AddReview/>}/>
         <Route path = "/" element={<Home/>}/>
-        {/* <Route path="*" element={<ErrorPage/>}/> */}
+        <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   )
 }

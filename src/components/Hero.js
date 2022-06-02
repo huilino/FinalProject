@@ -16,10 +16,10 @@ export default function Hero() {
     </div>
     <div className="hero">
         <div className="container">
-            <div className="content">
-                    <h1>Cooking</h1>
-                    <h3><em>IS LOVE</em></h3>
-                    <p>made visible </p>
+            <div className="hero-content">
+                    <h1 className="hero-label">Cooking</h1>
+                    <h3 className="hero-label2"><em>IS LOVE</em></h3>
+                    <p className="hero-text">made visible </p>
                     <Button onClick={() => navigate("/searched/:search")} variant = "secondary" className = "btn">
                       Search Recipe
                     </Button>

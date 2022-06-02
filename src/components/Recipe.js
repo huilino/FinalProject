@@ -5,7 +5,6 @@ import RecipeCard from './RecipeCard';
 import Search from './Search';
 import {v4 as uuidv4} from 'uuid';
 
-
 export default function Recipe() {
 
   const APP_ID = "4825be06";
@@ -44,7 +43,7 @@ export default function Recipe() {
   </div>
     ) : (
       <div className="empty">
-        <h2>No recipes found</h2>
+        <h2>Oops! No recipes found</h2>
       </div>
     )
     }

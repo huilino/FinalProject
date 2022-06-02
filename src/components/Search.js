@@ -15,7 +15,6 @@ export default function Search() {
         navigate("/searched/" + search);
       };
     
-
   return(
       <div className="search-box">
         <form onSubmit = {handleSubmit} className = "search-box">

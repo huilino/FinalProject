@@ -1,0 +1,80 @@
+#review-list{
+    background: url('../../assets/images/bgimg.jpg') no-repeat center center/cover;
+    font-size: 30px;
+    height:100vh;
+}
+
+.addreview-btn{
+    display:flex;
+    justify-content: center;
+}
+
+.add-btn:hover{
+    color:rgba(128, 128, 128, 0.949);
+}
+
+.add-btn{
+    font-size:30px;
+    font-style: italic;
+    margin-top:40px;
+    padding-block: 20px;
+    padding-inline: 50px;
+    border-radius:8px;
+    box-shadow: 5px 5px 20px #917878;
+    margin-bottom:30px;
+}
+
+.review-summary{
+    text-align: center;
+    margin-top:20px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #4a444455;
+}
+
+td{
+    border-top: 5px solid #4a4444 ;
+}
+
+.view-btn{
+    font-size:25px;
+    margin-right:10px;
+    background-color: rgba(250, 235, 215, 0.373);
+    border: 3px solid whitesmoke;
+    border-radius: 8px;
+    font-weight:bold;
+}
+
+.edit-btn{
+    font-size:25px;
+    margin-right:10px;
+    border: 3px solid whitesmoke;
+    border-radius: 8px;
+    background-color: rgba(105, 181, 65, 0.596);
+    font-weight:bold;
+}
+
+.edit-btn:hover{
+    background-color: rgba(1, 177, 86, 0.576);
+    border-color:rgba(1, 177, 86, 0.576) ;
+}
+.delete-btn{
+    font-size:25px;
+    border: 3px solid whitesmoke;
+    border-radius: 8px;
+    font-weight:bold;
+    background-color: rgba(207, 77, 41, 0.596);
+}
+
+@media screen and (max-width:740px) {
+
+    #review-list{
+        font-size:20px;
+    }
+    .view-btn, .edit-btn, .delete-btn{
+        font-size: 20px;
+    }
+
+} 

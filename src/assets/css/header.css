@@ -17,28 +17,23 @@
     margin-left:-20px;
     margin-top: -20px;
     height:auto;
-    
 }
 
-span{
+.span{
     color:red;
     text-decoration: solid;
-    
 }
 
 .navbar-brand>img {
-    padding: 2px;
-    
+    padding: 2px; 
 }
 
 .nav-link{
- 
     font-size:25px;
     justify-content: end;
     letter-spacing: 2px;
     font-weight: bold;
     position:relative;
-    
 }
 
 .nav-link:hover{
@@ -46,11 +41,16 @@ span{
 }
 
 .active{
-    color:red !important;
+    color:rgba(239, 43, 43, 0.937) !important;
     font-weight: bolder;
 }
 
+@media screen and (max-width:700px) {
 
+    div#responsive-navbar-nav,button.navbar-toggler {
+        background-color: rgba(233, 196, 196, 0.355);
+    }
+} 
 
 
 

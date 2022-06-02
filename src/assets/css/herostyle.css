@@ -11,43 +11,44 @@
     flex-direction: column;
     justify-content: center;
     height:100%;
-    padding-left: 200px;
-    
-
+    padding-left: 200px; 
 }
 
-.hero .content{
+.hero-content{
     border-left: 10px solid rgb(128, 16, 16);
-    padding: 0px;
     font-size:60px;
     margin-left:0px;
     color:rgb(19, 6, 6);
-    padding-top: 30px;
+    text-align: left;
 }
 
 .hero .btn{
-    padding:10px;
-    margin-left: 10px;
+    padding:20px;
+    margin-left: 20px;
     font-size: 30px;
     border-radius: 10px;
-
 }
-h1{
+
+.hero-label{
     font-size:90px;
     font-weight: bold;
     color:rgb(12, 1, 1);
+    padding-left:20px;
 }
 
-h3 {
-    font-size:50px;
+.hero-label2{
+    padding-left:20px;
+    font-size:60px;
 }
 
-p{
-    font-weight: bolder;
+p.hero-text {
+    padding-left:20px;
+    font-weight:bolder;
+    color: whitesmoke;
+    letter-spacing: 3px;
 }
 
 .quote{
-    
     background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
     text-align: center;
     margin:0px;
@@ -55,7 +56,6 @@ p{
 
 .quote-text {
     font-size: 40px;  
-    
 }
 
 .quote-text>svg {
@@ -64,9 +64,10 @@ p{
     margin-left:10px;
     margin-bottom:10px;
     font-size: 30px; 
-    
 }
 
 .quote-author{
     font-size: 20px;
+    margin:0px;
+    padding-bottom:10px;
 }
