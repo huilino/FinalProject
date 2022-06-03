@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FinalProject/static/css/main.66bec790.css",
+    "main.js": "/FinalProject/static/js/main.9f94c629.js",
+    "static/js/787.7534b4d8.chunk.js": "/FinalProject/static/js/787.7534b4d8.chunk.js",
+    "static/media/image5.jpg": "/FinalProject/static/media/image5.94385c001dbc529b6853.jpg",
+    "static/media/bg.jpg": "/FinalProject/static/media/bg.f194afe166e6ed3d5198.jpg",
+    "static/media/herobg.jpg": "/FinalProject/static/media/herobg.8ea36e08656f6d89ce02.jpg",
+    "static/media/viewbg.jpg": "/FinalProject/static/media/viewbg.82cb03e0175ec40efb6b.jpg",
+    "static/media/dish1.jpg": "/FinalProject/static/media/dish1.9da1c06e45cc7e09302b.jpg",
+    "static/media/bgimg.jpg": "/FinalProject/static/media/bgimg.68407cb1a2b880aa6a5a.jpg",
+    "static/media/image4.webp": "/FinalProject/static/media/image4.9906210e3a2fbb2332de.webp",
+    "static/media/image1.webp": "/FinalProject/static/media/image1.9fd0e26f117c47213a00.webp",
+    "static/media/carousel1.jpg": "/FinalProject/static/media/carousel1.1830062fc4c5b8280211.jpg",
+    "static/media/logo1.PNG": "/FinalProject/static/media/logo1.70284c88d014ed8468cb.PNG",
+    "index.html": "/FinalProject/index.html",
+    "main.66bec790.css.map": "/FinalProject/static/css/main.66bec790.css.map",
+    "main.9f94c629.js.map": "/FinalProject/static/js/main.9f94c629.js.map",
+    "787.7534b4d8.chunk.js.map": "/FinalProject/static/js/787.7534b4d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66bec790.css",
+    "static/js/main.9f94c629.js"
+  ]
+}
